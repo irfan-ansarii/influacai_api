@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collabs",
+  "info": {
+    "singularName": "collab",
+    "pluralName": "collabs",
+    "displayName": "collab",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "campaign": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campaign.campaign"
+    },
+    "influencer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "charge": {
+      "type": "float"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "under review",
+        "accepted",
+        "content shared",
+        "content approved",
+        "content rejected",
+        "published"
+      ],
+      "default": "under review"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "isNew": {
+      "type": "boolean",
+      "default": true
+    },
+    "finalContent": {
+      "type": "json"
+    },
+    "previewMedia": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "previewContent": {
+      "type": "text"
+    },
+    "remark": {
+      "type": "text"
+    }
+  }
+}

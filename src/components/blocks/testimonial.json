@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_blocks_testimonials",
+  "info": {
+    "displayName": "testimonial",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.testimonial"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "light",
+        "dark"
+      ],
+      "default": "light"
+    }
+  }
+}

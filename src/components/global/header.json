@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_global_headers",
+  "info": {
+    "displayName": "header"
+  },
+  "options": {},
+  "attributes": {
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "default",
+        "transparent"
+      ],
+      "default": "default"
+    },
+    "linkColor": {
+      "type": "enumeration",
+      "enum": [
+        "ligh",
+        "dark"
+      ],
+      "default": "dark"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "navigation": {
+      "displayName": "navigation",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.navigation"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button"
+    }
+  }
+}

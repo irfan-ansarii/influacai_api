@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "compensations",
+  "info": {
+    "singularName": "compensation",
+    "pluralName": "compensations",
+    "displayName": "compensation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "inputLabel": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "inputPlaceholder": {
+      "type": "string"
+    }
+  }
+}

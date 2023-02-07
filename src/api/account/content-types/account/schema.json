@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounts",
+  "info": {
+    "singularName": "account",
+    "pluralName": "accounts",
+    "displayName": "account",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "accessToken": {
+      "type": "string"
+    },
+    "refreshToken": {
+      "type": "string"
+    },
+    "followers": {
+      "type": "float"
+    },
+    "posts": {
+      "type": "float"
+    },
+    "engagements": {
+      "type": "float"
+    },
+    "lastPost": {
+      "type": "date"
+    },
+    "platform": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::platform.platform"
+    },
+    "userName": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "rank": {
+      "type": "enumeration",
+      "enum": [
+        "mini",
+        "micro"
+      ]
+    },
+    "profileUrl": {
+      "type": "string"
+    }
+  }
+}

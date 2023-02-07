@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_shared_cards",
+  "info": {
+    "displayName": "card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "external": {
+      "type": "boolean",
+      "default": false
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "style": {
+      "type": "enumeration",
+      "enum": [
+        "iconCard",
+        "imageCard"
+      ],
+      "default": "iconCard"
+    },
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "minimal",
+        "primary",
+        "light",
+        "dark"
+      ],
+      "default": "primary"
+    }
+  }
+}

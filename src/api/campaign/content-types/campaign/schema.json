@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campaigns",
+  "info": {
+    "singularName": "campaign",
+    "pluralName": "campaigns",
+    "displayName": "campaign",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "idea": {
+      "type": "text"
+    },
+    "caption": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "draft",
+        "published",
+        "live",
+        "completed"
+      ],
+      "default": "draft"
+    },
+    "platform": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::platform.platform"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "compensation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::compensation.compensation"
+    },
+    "compensationValue": {
+      "type": "string"
+    },
+    "objective": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::objective.objective"
+    },
+    "campaignContent": {
+      "type": "json"
+    }
+  }
+}

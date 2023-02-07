@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_logos",
+  "info": {
+    "displayName": "logo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "images": {
+      "displayName": "image",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.image"
+    }
+  }
+}

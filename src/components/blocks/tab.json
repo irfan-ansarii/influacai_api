@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blocks_tabs",
+  "info": {
+    "displayName": "tab",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "tabs": {
+      "displayName": "step",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.step"
+    }
+  }
+}

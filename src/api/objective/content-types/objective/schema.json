@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "objectives",
+  "info": {
+    "singularName": "objective",
+    "pluralName": "objectives",
+    "displayName": "objective"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

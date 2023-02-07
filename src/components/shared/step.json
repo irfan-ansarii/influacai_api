@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_steps",
+  "info": {
+    "displayName": "step"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

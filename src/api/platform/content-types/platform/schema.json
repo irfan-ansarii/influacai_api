@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "platforms",
+  "info": {
+    "singularName": "platform",
+    "pluralName": "platforms",
+    "displayName": "platform",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "placement": {
+      "type": "json"
+    }
+  }
+}
